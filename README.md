@@ -1,8 +1,12 @@
 # HaskellFancyTextMe
 
-Just a simple Haskell Programm which counts the number of Char on a String and creates a ranking.
+Just a simple Haskell Programms for String parsing and classification.
 
-### Update: Try v1 which is a ONE-LINE version of TextMe.
+## textMe
+
+Counts the Char of a long String and sort them from the more frequent to the last frequent 
+
+* Update: Try v1 which is a ONE-LINE version of TextMe.
 
 ## How it Works
 
@@ -17,6 +21,15 @@ ex:
  * `let result = textMe "MY_FANCY_STRING"`
  * `top 10 result   -- to get the top 10 `
  * `worst 10 result -- to get the worst 10 `
+
+## wordMe
+
+Counts the words of a long String and sort them from the more frequent to the last frequent 
+
+## How it Works
+* open 	`ghci`
+* `:l word_vX.hs`
+* `wordMe "MY_FANCY_STRING"`
 
 ## LICENSE
 
