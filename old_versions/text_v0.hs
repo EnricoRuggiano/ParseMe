@@ -1,5 +1,4 @@
 -- Version "By Hand" of textMe program
-
 -- Sort
 quicksort' :: (Ord a) => [a] -> [a]
 quicksort'[] = []

@@ -1,5 +1,4 @@
 -- Version ONE-Line of textMe program
-
 import Data.List
 
 textMe:: String -> [(Int, Char)]
