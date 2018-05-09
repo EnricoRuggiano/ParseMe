@@ -1,4 +1,4 @@
--- Char ranker of a piece of text
+-- Version "By Hand" of textMe program
 
 -- Sort
 quicksort' :: (Ord a) => [a] -> [a]
@@ -41,5 +41,5 @@ worst x y = take x (reverse y)
 
 -- main function
 textMe :: String -> [(Int, Char)]
-textMe x = rank'(init (count' (splitAll' (quicksort' x)))) 
+textMe x = rank' $ init $ count' $ splitAll' $ quicksort' x 
 				 
