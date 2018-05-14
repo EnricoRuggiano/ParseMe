@@ -1,9 +1,10 @@
 module ParseMe 
 ( textMe,
-  wordMe
+  wordMe,
+  nameMe
 ) where
-
 import Data.List
+import Data.Char
 
 -- Version ONE-Line of textMe program
 textMe:: String -> [(Int, Char)]
@@ -12,5 +13,11 @@ textMe = reverse . sort . map  lambda' . group . sort
   
 -- WordMe One-Line
 wordMe:: String -> [(Int, String)]
-wordMe =  reverse . sort . map lambda' . group . sort . words
+wordMe = reverse . sort . map lambda' . group . sort . words
 	where lambda' = \x -> (length x, head x)
+
+-- NameMe
+nameMe:: String -> [(Int, String)]
+nameMe = reverse . sort . map lambda' .  group . sort . filter upper' . words
+    where lambda' = \x -> (length x, head x)
+          upper'  = isUpper . head
