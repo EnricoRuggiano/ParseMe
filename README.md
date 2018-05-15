@@ -1,6 +1,6 @@
-# HaskellFancyTextMe
+# ParseMe module
 
-Just a simple Haskell Programms for String parsing and classification.
+Just a simple and basic Haskell module for String parsing and classification.
 
 ## textMe
 
