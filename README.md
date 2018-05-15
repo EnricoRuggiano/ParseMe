@@ -14,6 +14,10 @@ Counts the words of a long String and sort them from the more frequent to the la
 
 Just import the ParseMe.hs module.
 
+# Example: Parsing Divina Commedia
+
+Just run `ghc example.hs` which will parse the Canto 1 of the Divina Commedia Inferno. So much fun!
+
 ## LICENSE
 
 ### THE BEER-WARE LICENSE
